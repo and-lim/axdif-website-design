@@ -1,0 +1,170 @@
+<app-navbar></app-navbar>
+<div class="container px-lg-3 m-lg-0 mt-3">
+    <div class="row mx-0 date-grid justify-content-between my-4">
+        <div class="col-lg-3 col-12">
+            <h5>Employee Summary</h5>
+        </div>
+        <div class="col-lg-9 col-12 d-inline-flex gap-3">
+            <div class="d-flex me-3 display-data ms-lg-auto align-items-center gap-3 justify-content-center">
+                <label for="">Display data in</label>
+                <ul class="nav nav-pills d-flex flex-row gap-1 gap-lg-0 justify-content-center rounded-pill">
+                    <li class="nav-item btn-tab">
+                        <button class="nav-link d-flex justify-content-center bg-white text-dark text-center" data-bs-toggle="pill" href="#tab-1">
+                            <span>Monthly</span>
+                        </button>
+                    </li>
+                    <li class="nav-item btn-tab">
+                        <button class="nav-link d-flex justify-content-center bg-primary" data-bs-toggle="pill" href="#tab-2">
+                            <span>Yearly</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex period-calendar align-items-center gap-3">
+                <label for="">Periode</label>
+                <p-calendar ngModel="dob" [showIcon]="true" class="p-calendar" view="month" dateFormat="mm/yy" placeholder="2022" [readonlyInput]="true"
+                dateFormat="dd/mm/yy"></p-calendar>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row my-3 mx-0 px-lg-5 justify-content-center ">
+    
+        <div class="col-lg-9">
+            <p-card styleClass="mb-3 bar-card">
+                    <div class="card-heading">
+                        <h3 class="fw-bold mb-3">Attendance Summary</h3>
+                        <p-chart type="bar" [data]="data" [options]="options"></p-chart>
+                    </div>
+                    <div class="card-content my-3 py-2">
+                        <div class="row gap-0">
+                            <div class="col-lg-3 col-6">
+                                <div class="card mini-card p-3 border-blue">
+                                    <div class="d-inline-flex align-items-center">
+                                        <label class="text-secondary label-mini d-inline">Total working days</label>
+                                        <img src="assets/img/Info.svg" style="width: 16px;" alt="">
+                                    </div>
+                                    <h3 class="fw-bold">237 days</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="card mini-card p-3 border-blue">
+                                    <div class="d-inline-flex align-items-center">
+                                        <label class="text-secondary label-mini d-inline">Actual Working hours</label>
+                                        <img src="assets/img/Info.svg" style="width: 16px;" alt="">
+                                    </div>
+                                    <h3 class="fw-bold">2126hr 14 min</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="card mini-card p-3 border-lightblue">
+                                    <div class="d-inline-flex align-items-center">
+                                        <label class="text-secondary label-mini d-inline">Total working Hours</label>
+                                        <img src="assets/img/Info.svg" style="width: 16px;" alt="">
+                                    </div>
+                                    <h3 class="fw-bold">2930 hr 26 min</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="card mini-card p-3 border-red">
+                                    <div class="d-inline-flex align-items-center">
+                                        <label class="text-secondary label-mini d-inline">Total Late coming</label>
+                                        <img src="assets/img/Info.svg" style="width: 16px;" alt="">
+                                    </div>
+                                    <h3 class="fw-bold">0</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </p-card>
+        </div>
+        <div class="col-lg-3">
+            <p-card styleClass="pie-card">
+                <h3 class="fw-bold mb-3">Attendance completeness</h3>
+                <div class="py-0 pb-lg-3">
+                    <app-piechart></app-piechart>
+                </div>
+            </p-card>
+
+        </div>
+    </div>
+
+    <div class="row my-3 mx-0 px-0 px-lg-5 justify-content-center ">
+        <div class="col-lg-5">
+            <p-card>
+                <h3 class="fw-bold my-2">Overall Task Progress</h3>
+                <app-taskchart></app-taskchart>
+            </p-card>
+        </div>
+        <div class="col-lg-7 my-lg-0 my-3">
+            <p-card styleClass="linechart">
+                <h3 class="fw-bold my-2">Task Completion in All Project</h3>
+                <app-linechart></app-linechart>
+                <div class="card mt-2 px-2">
+                    <div class="row">
+                        <div class="col-lg-3 col-6 task-progress px-3 py-2">
+                            <div class="d-flex justify-content-center gap-1 align-items-center">
+                                <label class="text-secondary d-inline text-center">Total Task Completed</label>
+                                <img src="assets/img/Info.svg" style="width: 16px;" alt="">
+                            </div>
+                            <div class="d-inline-flex text-center justify-content-center mt-2 gap-2 align-items-center">
+                                <h5 class="fw-bold">2400</h5>
+                                <div class="d-flex progress-task align-items-center mb-3">
+                                    <span class="text-success"> 20% </span>
+                                    <img src="assets/img/increase.svg" style="width: 16px;" alt="">
+                                </div>
+                            </div>
+                            <p class="text-center">Last Year : 2000 task</p>
+                        </div>
+                        <div class="col-lg-3 col-6 task-progress task-progress-end px-3">
+                            <div class="d-inline-flex align-items-center mb-2">
+                                <label class="text-secondary d-inline">Most Completed Tasks At</label>
+                                <img src="assets/img/Info.svg" style="width: 16px;" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h5 class="fw-bold">185</h5>
+                                <p>Last Year : 2000 task</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 task-progress-mobile task-progress px-3 py-2">
+                            <div class="d-inline-flex gap-1 align-items-center">
+                                <label class="text-secondary d-inline">Total working Hours</label>
+                                <img src="assets/img/Info.svg" style="width: 16px;" alt="">
+                            </div>
+                            <div class="d-inline-flex text-center justify-content-center mt-2 gap-2 align-items-center">
+                                <h5 class="fw-bold">1600</h5>
+                                <div class="d-flex progress-task-min align-items-center mb-3">
+                                    <span class="text-danger"> 20% </span>
+                                    <img src="assets/img/decrease.svg" style="width: 16px;" alt="">
+                                </div>
+                            </div>
+                            <p>Last Year : 1800 task</p>
+                        </div>
+                        <div class="col-lg-3 col-6 task-progress-mobile task-progress task-progress-end px-3">
+                            <div class="d-inline-flex align-items-center mb-2">
+                                <label class="text-secondary d-inline">Most Completed Tasks At</label>
+                                <img src="assets/img/Info.svg" style="width: 16px;" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h5 class="fw-bold">UI/UX Design</h5>
+                                <p>240 task</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p-card>
+        </div>
+    </div>
+    <div class="row mx-auto px-0 px-lg-5 justify-content-center">
+        <div class="col-lg-12 mx-auto">
+            <p-card styleClass="p-3 table-card" >
+                <h3 class="fw-bold">Leave Recap</h3>
+                <div style="overflow:hidden !important;">
+                    <app-table></app-table>
+                </div>
+            </p-card>
+        </div>
+    </div>
+</div>

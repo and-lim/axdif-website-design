@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid">
+        <div class="logo px-3">
+            <img src="assets/img/axdif-icon-square-white.svg" class="logo-image " alt="" />
+        </div>
+        <div class="line ms-3 d-lg-block d-none"></div>
+
+        <div class="nav-link dropdown d-lg-none d-block me-3">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Overview
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="/dashboard">Overview</a></li>
+                    <li><a class="dropdown-item" routerLink="/employee">Employee Stats</a></li>
+                    <li><a class="dropdown-item" routerLink="/dashboard">Submission</a></li>
+                    <li><a class="dropdown-item" routerLink="/dashboard">Task</a></li>
+                    <li><a class="dropdown-item" routerLink="/dashboard">Chat</a></li>
+                    <li><a class="dropdown-item" routerLink="/dashboard">Payroll</a></li>
+                </ul>
+        </div>
+
+        <div class="profile d-lg-none d-block">
+            <img src="assets/img/Profile.png" alt="">
+        </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-lg-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a routerLink="/dashboard" routerLinkActive="active" class="text-decoration-none nav-link">Overview
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/employee" routerLinkActive="active" class="text-decoration-none nav-link">Employee stats
+                        </a>
+                    </li>
+            
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Submision
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item">Dropdown</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/task" routerLinkActive="active" class="text-decoration-none nav-link">Task
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/chat" routerLinkActive="active" class="text-decoration-none nav-link">Chat
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/payroll" routerLinkActive="active" class="text-decoration-none nav-link">Payroll
+                        </a>
+                    </li>
+                </ul>
+                <div class="profile">
+                    <img src="assets/img/Profile.png" alt="">
+                </div>
+            </div>
+    </div>
+</nav>

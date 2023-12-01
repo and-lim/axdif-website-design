@@ -1,0 +1,35 @@
+<swiper-container class="py-3" loop="true" pagination="true" autoplay="true" css-mode="true" style="height: 500px;">
+    <swiper-slide>
+        <img src="assets/img/Illustration-1.svg">
+        <h5 class="swiper-title">Manage Task Easily & Efficiently</h5>
+        <p class="swiper-caption">Increase employee productivity and performance in a measurable and precision
+            system in one application
+        </p>
+    </swiper-slide>
+    <swiper-slide>
+        <img src="assets/img/Illustration-2.svg">
+        <h5 class="swiper-title">Communication Is Key</h5>
+        <p class="swiper-caption">Connect with your coworkers anywhere like you are in one workspace. Very
+            simple and fast
+        </p>
+    </swiper-slide>
+    <swiper-slide>
+        <img src="assets/img/Illustration-3.svg">
+        <h5 class="swiper-title">Employee Self-Service</h5>
+        <p class="swiper-caption">Simplify the administrative affairs of the company where you work wherever
+            and whenever. Let's get started with all these conveniences
+        </p>
+    </swiper-slide>
+</swiper-container>
+
+<script>
+    new Swiper('.swiper', {
+            slidesPerView: 1,
+            mousewheel: {
+                forceToAxis: true,
+            },
+            autoplay:true,
+            loop:true,
+            pagination:true,
+        });
+</script>

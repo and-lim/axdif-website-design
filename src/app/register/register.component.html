@@ -1,0 +1,70 @@
+<div class="container-fluid p-0 m-0">
+    <div class="row bg-sidebar">
+        <div class="login-main-header bg-white p-3 d-lg-none d-block">
+            <img src="assets/img/logo-axdif.svg "class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-3 d-lg-block d-none">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-lg-7">
+            <h1 class="title d-lg-none d-block my-3 py-3">A few clicks away from being parts from Axdif</h1>
+            <div class="container register-container py-3 my-3">
+                <div class="login-main-header d-lg-block d-none">
+                    <img src="assets/img/logo-axdif.svg" class="img-fluid" alt="">
+                    <h3 class="fw-bold my-3 py-3">Manage all your employee efficiently</h3>
+                    <h5>Lets get you all set up so you can verify your personal account and <br>
+                        begin setting up your profile
+                    </h5>
+                </div>
+                <div class="row form-row mt-3 py-3">
+                    <div class="col-lg-6">
+                        <div class="form-group mb-3 d-flex flex-column gap-2">
+                            <label htmlFor="Companyname" class="fw-bold">Company name</label>
+                            <input pInputText id="companyname" placeholder="e.g john"
+                                aria-describedby="username-help" />
+                        </div>
+                        <div class="form-group mb-3 d-flex flex-column gap-2">
+                            <label htmlFor="Email" class="fw-bold">Email</label>
+                            <input pInputText id="email" placeholder="e.g john.doe@mail.com"
+                                aria-describedby="username-help" />
+                        </div>
+                        <div class="form-group mb-3 d-flex flex-column gap-2">
+                            <label htmlFor="Companyname" class="fw-bold">Password</label>
+                            <p-password [toggleMask]="true" [feedback]="false" placeholder="Insert Password" styleClass="d-block register-password" [inputStyle]="{'width':'419px'}" ></p-password>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group mb-3 d-flex flex-column gap-2">
+                            <label htmlFor="Fullname" class="fw-bold">Fullname</label>
+                            <input pInputText id="Fullname" placeholder="e.g Doe" aria-describedby="username-help" />
+                        </div>
+                        <div class="form-group mb-3 d-flex flex-column g-1">
+                            <label htmlFor="Fullname" class="fw-bold">Phone Number(Optional)</label>
+                            <div class="row mx-auto gap-0 gap-lg-2 my-2">
+                                <input pInputText id="countrycode" placeholder="Country Code" class="col-lg-4 col-5"
+                                    aria-describedby="username-help" />
+                                <input pInputText id="phonenumber" placeholder="e.g e.g 821 2345 6789" class="col-lg-6 col-7"
+                                    aria-describedby="username-help" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="d-flex align-items-center gap-3 my-3">
+                        <p-checkbox formControlName="newsletter" inputId="newsletter"></p-checkbox>
+                        <label for="newsletter">Yes i want to receive Axdif Newsletter</label>
+                    </form>
+                    <form class="d-flex align-items-center gap-3 my-3">
+                        <p-checkbox formControlName="terms" inputId="terms"></p-checkbox>
+                        <label for="terms">I have read and accept The <a href="" class="terms">Terms & Conditions</a> and <a
+                                href="" class="privacy">Privacy Policy</a></label>
+                    </form>
+                    <div class="register-button mt-3">
+                        <button routerLink="/verification" class="btn btn-danger px-4"> Submit</button>
+                    </div>
+                    <p class="my-3">&copy; Copyright 2023. All right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

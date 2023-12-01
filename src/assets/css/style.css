@@ -1,0 +1,587 @@
+@import "primeicons/primeicons.css";
+html,body{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans",sans-serif !important;
+    background-color: #F9F9F9 !important;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;    
+}
+
+.bg-blue{
+    background-color: #0769e5;
+}
+
+.sidebar-menu{
+    background: #0769e5 url(../img/Masking-1.svg) 0% 0% no-repeat padding-box !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999 !important;
+    height: 100% !important;
+    width: 360px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-sidebar{
+    background-color: white;
+}
+
+.sidebar-wrapper{
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.title{
+    color: white;
+    font-size: 34px;
+    letter-spacing: 0.33px;
+    text-align: center;
+}
+
+.login-main-header img{
+    width: 200px !important;
+    height: 60px !important;
+}
+
+.p-password-input{
+    display: block !important;
+}
+
+.p-inputtext.p-component.p-element{
+    padding: 1rem !important;
+}
+
+.p-button-danger{
+    border-radius: 10px;
+   padding: 0.5rem 1rem;
+   background-color: red !important;
+}
+
+.terms,.privacy{
+    text-decoration: none;
+}
+
+p.copyright{
+    position: relative;
+    bottom: 0 !important;
+    color: black;
+}
+
+img.img-verif{
+    position: relative;
+    width: 650px;
+}   
+
+.btn-login{
+    padding: 5px 5rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #888FB0;
+    border-radius: 8px;
+    opacity: 1;
+    width: 100% !important;
+    cursor: pointer;
+
+}
+
+.btn-login:hover{
+    box-shadow: 1px 2px 2px black ;
+    transition: .5s ease;
+}
+
+.login-line p{
+    color: gray;
+    text-wrap: nowrap !important;
+}
+
+.line{
+    background-color: gray;
+    opacity: 0.3;
+    width: 95%;
+    margin: 0 auto;
+    height: 1.5px;
+}
+
+.login-line span{
+    background-color: gray;
+    opacity: 0.3;
+    width: 100%;
+    height: 2px;
+}
+
+
+.login-button .p-button-danger, .login-button .btn-danger{
+    text-align: center !important;
+    display: block !important;
+    width: 100%;
+}
+
+swiper-slide img{
+    height: 300px;
+    width: 300px;
+}
+
+swiper-container{
+    position: relative;
+    z-index: 1 !important;
+    width: 300px;
+}
+
+swiper-slide{
+    text-align: center;
+}
+
+.swiper-title{
+    color: white;
+    font-weight: bold;
+    margin: 0 10px !important;
+}
+
+.swiper-caption{
+    color: white;
+    margin-top: 1rem;
+}
+
+swiper-container::part(pagination) {
+    bottom :-1%;
+    margin-top: 10px;
+}
+
+swiper-container::part(bullet) {
+    width: 20px !important;
+    height: 15px !important;
+    background-color: white !important;
+}
+
+swiper-container::part(bullet-active) {
+    background-color: #08539A;
+    width: 50px;
+    border-radius: 12px !important;
+    height: 10px ;
+}
+
+
+img.logo-image{
+    width: 60px;
+    height: 60px;
+}
+
+.navbar{
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+nav .line{
+    height: 50px;
+    width: 2px;
+    background-color: gray;
+    opacity: 0.3;
+}
+
+.navbar-nav{
+    gap: 10px !important;
+}
+
+.profile img{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.p-card-content{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.p-button {
+    color: #ffffff;
+    background: white !important;
+    border: 1px solid #D4D4D4;
+    width: 3rem !important;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 3px !important;
+    border-left: none !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    height: 30px !important;
+  }
+
+svg.p-icon{
+    color: blue !important;
+}
+
+.p-button.p-button-icon-only{
+    width: 0.5 rem !important;
+}
+p-calendar .p-inputtext{
+    border-right: none !important;
+    height: 30px !important;
+    width: 50px !important;
+    padding: 0 0.3rem;
+    border-radius: 3px !important;
+    border-color: #D4D4D4;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+p-calendar.p-calendar-dashboard .p-inputtext{
+    width: 150px !important;
+}
+
+.dashboard-container{
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.card-header{
+    border-bottom: 1px solid rgb(195, 194, 194)  !important;
+    padding: 1.5rem 0 !important;
+    padding-bottom: 2rem !important; 
+    height: 40px;   
+}
+
+.bg-banner{
+    background: url(../img/img-banner-profile.png) center center no-repeat;
+}
+
+.profile-card{
+    background-color: white;
+    width: 450px;
+}
+
+
+.profile-card .profile-overview{
+    padding: 1rem !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.progress-task{
+    background-color: rgb(171, 239, 171);
+    font-size: 12px;
+    padding: 0 0.3rem;
+    border-radius: 2px;
+}
+
+.progress-task-min{
+    background-color: rgb(244, 201, 201);
+    font-size: 12px;
+    padding: 0 0.3rem;
+    border-radius: 2px;
+}
+
+.profile-picture{
+    position: relative;
+    left: 50% !important;
+    transform: translate(-50%, -30%);
+}
+
+.profile-picture img{
+    width: 80px;
+    display: flex;
+    justify-content: center !important;
+    position: relative;
+    left: 50% !important;
+    transform: translateX(-50%);   
+}
+
+.bg-green{
+    position: relative;
+    padding: 3px 0.5rem;
+    border-radius: 2px !important;
+    background: #5eefb3f8 0% 0% no-repeat padding-box;
+    border-radius: 17px;
+    opacity: 1;
+    color: green !important;
+}
+
+.attendance-card{
+    width: 450px;
+}
+
+.attendance{
+    border-top: 3px solid green;
+    border-radius: 5px;
+}
+.attendance-1{
+    border-top: 3px solid red;
+    border-radius: 5px;
+}
+
+.p-card .p-card-body{
+    padding: 0.5rem 1.25rem;
+}
+
+.active{
+    background-color: #F4F6FF !important;
+    border-radius: 6px;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+.card.mini-card{
+    min-height: 90px;
+    padding: 1rem !important;
+}
+
+.card label{
+    font-size: 14px;
+}
+
+.card.mini-card h3{
+    font-size: 18px !important;
+    margin-top: 10px;
+}
+
+.border-blue{
+    border-left: 5px solid #0078e1 !important;
+    border-radius: 6px;
+}
+
+.border-lightblue{
+    border-left: 5px solid #85bff2 !important;
+    border-radius: 6px;
+}
+
+.border-red{
+    border-left: 5px solid red !important;
+    border-radius: 6px;
+}
+
+.pie-card{
+    width: 470px;
+    height: 460px;
+}
+
+.linechart{
+    width: 870px;
+}
+
+.table-card{
+    width: 1370px;
+}
+
+span.p-calendar .p-inputtext{
+    width: 100px
+}
+
+.date-grid{
+    width: 1400px;
+}
+
+.card .task-progress{
+    border-right: 1px solid rgb(189, 189, 189) ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 0 !important;
+}
+
+
+span.progress-task{
+    font-size: 10px;
+}
+
+li.btn-tab button{
+    padding: 0.5rem 1.25rem ;
+    width: 100%;
+}
+
+.table-width{
+    width: 20% !important;
+    padding: 0 1rem !important;
+    margin: 0 15px !important;
+}
+
+.p-datatable-lg{
+table-layout: auto !important;
+}
+
+.p-datatable-lg th{
+    padding: 0 1rem ;
+}
+
+.p-datatable-wrapper{
+    overflow-x: scroll !important;
+    table-layout: auto !important;
+}
+
+.p-datatable-lg{
+    width: 100% !important;
+    overflow-x: auto !important;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    table-layout: auto !important;
+    
+}
+
+th:first-child, td:first-child{
+  position:sticky;
+  left:0;
+  min-width: 350px;
+  z-index: 1000 !important;
+  background-color: white !important;
+}
+
+.p-datatable-lg tbody{
+    width: 100% !important;
+    overflow-x: auto !important;
+    table-layout: auto !important;
+}
+
+.p-datatable-lg th{
+    min-width: 200px ;
+    padding: 1rem !important;
+}
+
+
+
+.p-datatable-lg td{
+    padding: 0.5rem;
+}
+
+p.status{
+    background-color: green;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0.5rem;
+    color: white;
+}
+
+/* responsive */
+
+@media (max-width:800px) {
+    .sidebar-menu{
+        position: unset !important;
+    }
+    .bg-sidebar{
+        background: #0769e5 url(../img/Masking-1.svg) 0% 0% no-repeat padding-box !important;
+        padding-bottom: 3rem;
+    }
+    .register-container{
+        max-width: 90%;
+        margin: 0 auto !important;
+        background-color: white !important;
+        padding-top: 1rem;
+        margin-top: 2rem;
+        border-radius: 10px;
+    }
+    p.copyright{
+        color: white !important;
+        text-align: center;
+        font-size: 16px !important;
+    }
+    .p-password-input{
+        width: 320px !important;
+    }
+
+    .login-password .p-password-input{
+        width: 350px !important;
+    }
+    .profile-desc{
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width:1000px) {
+    .task-card{
+        position: relative;
+        top: -100px;
+    }
+}
+
+@media (max-width:900px) {
+    .profile-card , .attendance-card,.pie-card,.linechart,.table-card,.date-grid{
+        width: 100% !important;
+    }
+    .pie-card{
+        height: 100% !important;
+    }
+    span.p-calendar .p-inputtext{
+        width: 50px !important;
+    }
+    li.btn-tab{
+        font-size: 9px;
+        text-align: center !important;
+        display: block;
+        width: 50px !important;
+    }
+    li.btn-tab button{
+        padding: 0.5rem 1rem ;
+        width: 100%;
+    }
+    .display-data{
+        width: 60%;
+    }
+    .period-calendar{
+        width: 40%;
+    }
+    .display-data label{
+        width: 30%;
+    }
+    .display-data .nav-pills{
+        width: 300px !important;
+    }
+    span.task-span{
+        text-wrap: nowrap;
+        font-size: 10px;
+    }
+    .task-due{
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width:700px) {
+    .card .task-progress-mobile{
+        border-top: 1px solid rgb(189, 189, 189) !important;
+    }
+    
+    .task-progress-end{
+        border-right: white!important;
+    }
+
+    label.label-mini{
+        font-size: 10px !important;
+    }
+
+    .card.mini-card h3{
+        font-size: 15px !important;
+    }
+
+}
+
+@media (max-width:576px) {
+    .card-header{
+        width: 100%;
+    }
+
+    p-calendar .p-inputtext{
+        width: 60px !important;
+    }
+
+    .p-datatable-lg th{
+        min-width: 180px !important;
+        padding: 1rem !important;
+    }
+    th:first-child, td:first-child{
+        position:sticky;
+        left:0;
+        min-width: 180px !important;
+        z-index: 1000 !important;
+        background-color: white !important;
+      }
+}

@@ -1,0 +1,65 @@
+<div class="container-fluid p-0 m-0" >
+    <div class="row" style="height: 100vh !important;">
+        <div class="col-lg-8 d-none bg-blue d-lg-flex justify-content-center align-items-center">
+                <img src="assets/img/illustration-1.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-4">
+            <div class="container py-3 my-3">
+                <div class="login-main-header">
+                    <img src="assets/img/logo-axdif.svg" class="img-fluid" alt="">
+                    <h3 class="fw-bolder my-3 py-3">Login to your account</h3>
+                    <h6 class="fw-bold">Hi, welcome back! Select method to login</h6>
+                </div>
+                <div class="row form-row mt-3 py-3">
+                    <div class="col-lg-6 col-12">
+                        <a class="btn-login text-decoration-none text-dark d-flex gap-1 align-items-center justify-content-center">
+                            <img src="assets/img/google.png" style="width: 16px;">
+                            <span>Google</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <a class="btn-login text-decoration-none text-dark d-flex align-items-center justify-content-center">
+                            <i class="pi pi-linkedin text-primary me-2"></i>
+                            <span>Linkedin</span>
+                        </a>
+                        </div>
+                    <div class="login-line mt-3">
+                        <div class="gap-3 d-flex align-items-center justify-content-center">
+                            <span></span>
+                            <p class="mt-1">
+                                or continue with
+                            </p>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-3">
+                        <div class="form-group mb-3 d-flex flex-column gap-2">
+                            <label htmlFor="Email" class="fw-bold">Email</label>
+                            <input pInputText id="email" placeholder="e.g john.doe@mail.com" aria-describedby="username-help" />
+                        </div>    
+                        <div class="form-group mb-3 d-flex flex-column gap-2">
+                            <label htmlFor="Companyname" class="fw-bold">Password</label>
+                            <p-password [feedback]="false" [toggleMask]="true"  placeholder="Insert Password" [inputStyle]="{'width':'470px'}" class="login-password"></p-password>
+                        </div>    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <form class="d-flex align-items-center gap-3 my-3">
+                            <p-checkbox formControlName="newsletter" inputId="newsletter"></p-checkbox>
+                            <label for="newsletter">Remember me</label>
+                        </form>
+                        <a href="" class="text-decoration-none fw-bolder">Forgot password</a>
+                    </div>
+                    <div class="login-button mt-3">
+                        <button routerLink="/dashboard" Class="btn btn-danger text-center"> Submit</button>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center my-3 gap-5">
+                        <span class="text-secondary text-center">Privacy Policy .  Terms & Condition</span>
+                        <p class="my-3 d-lg-none d-block text-center">&copy; Copyright 2023. All right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<p-table styleClass="p-datatable-lg table-data overflow-auto"  [responsive]="false" [scrollable]="true" [value]="tableData" [tableStyle]="{'min-width': '60rem'}" >
+    <ng-template pTemplate="header">
+        <tr class="px-5">
+            <th pSortableColumn="leavecode" class="first-table" style="background-color: #F8F9FA !important;">Leave Code <p-sortIcon field="leavecode"></p-sortIcon></th>
+            <th pSortableColumn="request" style="width: 200px;">Requested on <p-sortIcon field="request"></p-sortIcon></th>
+            <th pSortableColumn="leavetype">Leave type <p-sortIcon field="leavetype"></p-sortIcon></th>
+            <th pSortableColumn="startdate">Start date <p-sortIcon field="startdate"></p-sortIcon></th>
+            <th pSortableColumn="enddate">End date <p-sortIcon field="enddate"></p-sortIcon></th>
+            <th pSortableColumn="duration">Duration <p-sortIcon field="duration"></p-sortIcon></th>
+            <th pSortableColumn="daytype">Day type <p-sortIcon field="daytype"></p-sortIcon></th>
+            <th pSortableColumn="leavecategory">Leave category <p-sortIcon field="leavecategory"></p-sortIcon></th>
+            <th pSortableColumn="status">Status <p-sortIcon field="status"></p-sortIcon></th>
+            <th pSortableColumn="reason" >Reason <p-sortIcon field="reason"></p-sortIcon></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-people>
+        <tr styleclass="p-3 overflow-auto">
+            <td class="first-table" >{{people.leavecode}}</td>
+            <td >{{people.request}}</td>
+            <td >{{people.leavetype}}</td>
+            <td >{{people.startdate}}</td>
+            <td >{{people.enddate}}</td>
+            <td>{{people.duration}}</td>
+            <td> {{people.daytype}}</td>
+            <td >{{people.leavecategory}}</td>
+            <td >
+                <p class="status">
+                    {{people.status}}
+                </p>
+            </td>
+            <td >{{people.reason}}</td>
+        </tr>
+    </ng-template>
+</p-table>
