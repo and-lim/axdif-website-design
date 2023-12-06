@@ -3,11 +3,14 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
 ### Screenshots
-<img src="assets/img/screenshots.png" alt="">
+
+
+![axdif-website-design vercel app_login](https://github.com/and-lim/axdif-website-design/assets/100760781/54c14403-8475-44fb-ab71-064e7a2adc65)
 &nbsp;
-<img src="assets/img/screenshots-2.png" alt="">
-&nbsp;
-<img src="https://andrian.vercel.app/img/recipe-details.png" alt="">
+![axdif-website-design vercel app_dashboard](https://github.com/and-lim/axdif-website-design/assets/100760781/985754f8-fe92-4ac7-b52c-3407ed329ab6)
+
+
+
 
 
 ## Development server
